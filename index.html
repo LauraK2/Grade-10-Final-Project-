@@ -40,74 +40,102 @@
                 float: center;
                 border: 2px outset #252838;
             }  
+
+            #image
+            {
+                margin:7px;
+                float:right;
+                border: 2px outset #252838;
+                -webkit-border:2px outset #252838;
+                padding:0%;
+                height: 350px;
+                width:430px;
+                float: right;
+            }
+
+            #div 
+            {
+                border: 5px outset #252838;
+                padding:7px;
+                margin: 15px;
+                background-color:#e8f6fa;    
+                text-align: center;
+                font-size: 24px;
+                float: right;
+            }
         </style> 
     </head>
     <body style="background-color: #E6E6FA; color: #252838;">
-        <!-- nav bar -->
-        <!--made class flex-container so the nav bar take the styling for a flexbox which i named flex-contanier-->
-        <nav class="flex-container">
-            <ul>
-                <li>
-                    <a href="index.html">Home Page</a>
-                </li>
-                <li>
-                    <a href="About me.html"> About me</a>
-                </li>
-                <li>
-                    <a href="Achievements.html"> Achievements</a>
-                </li>
-                <li>
-                    <a href="Extracurriculars.html"> Extracurriculars</a>
-                </li>
-            </ul>
-        </nav>
+        <main>
+            <!-- nav bar -->
+            <!--made class flex-container so the nav bar take the styling for a flexbox which i named flex-contanier-->
+            <nav class="flex-container">
+                <ul>
+                    <li>
+                        <a href="index.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="About me.html"> About me</a>
+                    </li>
+                    <li>
+                        <a href="Achievements.html"> Achievements</a>
+                    </li>
+                    <li>
+                        <a href="Extracurriculars.html"> Extracurriculars</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br>
 
-        <h1>My Website </h1>
+            <h1>My Website </h1>
 
-        <div class = "div"> 
-            <p style="font-size:27px; width:300px;"> 
-            <span style="font-weight:bold; font-size:27px; text-decoration:underline;">About Me Page</span> 
-            <br> <br>
-            I am Laura Katsman,  I'm a student attending PTEC/Shaftesbury high school I am 15 years olds. Clck more...</p>
+            
+            
+            <div class = "div"> 
+                <p style="font-size:27px; width:300px;"> 
+                <span style="font-weight:bold; font-size:27px; text-decoration:underline;">About Me Page</span> 
+                <br> <br>
+                I am Laura Katsman,  I'm a student attending PTEC/Shaftesbury high school I am 15 years olds. Clck more...</p>
 
-            <button id="aboutme-button"> About me </button>
-            <script>
-                /** have set my skills button using its ID, then set the onclick attribute to attch a link to my 
-                * skills page that can only be accessed through the button and is not on my nav */
-                document.getElementById("aboutme-button").setAttribute("onclick", "window.location.href = 'About me.html';");   
-            </script>
-        </div>
+                <button id="aboutme-button"> About me </button>
+                <script>
+                    /** have set my skills button using its ID, then set the onclick attribute to attch a link to my 
+                    * skills page that can only be accessed through the button and is not on my nav */
+                    document.getElementById("aboutme-button").setAttribute("onclick", "window.location.href = 'About me.html';");   
+                </script>
+            </div>
 
-        <div class = "div"> 
-            <p style="font-size:27px; width:300px;"> 
-            <span style="font-weight:bold; font-size:27px; text-decoration:underline;"> Extracurriculars Page</span> 
-            <br>
-            <br>
-            Over my time starting in 2010 I have taken up some extracurriculars and since then have contiuned to enjoy. Click more...</p>
+            <div class = "div"> 
+                <p style="font-size:27px; width:300px;"> 
+                <span style="font-weight:bold; font-size:27px; text-decoration:underline;"> Extracurriculars Page</span> 
+                <br>
+                <br>
+                Over my time starting in 2010 I have taken up some extracurriculars and since then have contiuned to enjoy. Click more...</p>
 
-            <button id="extra-button"> Extracurriculars</button>
-            <script>
-                /** have set my skills button using its ID, then set the onclick attribute to attch a link to my 
-                * skills page that can only be accessed through the button and is not on my nav */
-                document.getElementById("extra-button").setAttribute("onclick", "window.location.href = 'Extracurriculars.html';");   
-            </script>
-        </div>
+                <button id="extra-button"> Extracurriculars</button>
+                <script>
+                    /** have set my skills button using its ID, then set the onclick attribute to attch a link to my 
+                    * skills page that can only be accessed through the button and is not on my nav */
+                    document.getElementById("extra-button").setAttribute("onclick", "window.location.href = 'Extracurriculars.html';");   
+                </script>
+            </div>
 
-        <div class = "div"> 
-            <p style="font-size:27px; width:300px;"> 
-            <span style="font-weight:bold; font-size:27px; text-decoration:underline;"> Achievements Page</span> 
-            <br>
-            <br>
-            During my time inside and outside of school I have had many opportunities i have particitapted in. Click more...</p>
+            <div class = "div"> 
+                <p style="font-size:27px; width:300px;"> 
+                <span style="font-weight:bold; font-size:27px; text-decoration:underline;"> Achievements Page</span> 
+                <br>
+                <br>
+                During my time inside and outside of school I have had many opportunities i have particitapted in. Click more...</p>
 
-            <button id="ach-button"> Achievements</button>
-            <script>
-                /** have set my skills button using its ID, then set the onclick attribute to attch a link to my 
-                * skills page that can only be accessed through the button and is not on my nav */
-                document.getElementById("ach-button").setAttribute("onclick", "window.location.href = 'Achievements.html';");   
-            </script>
-        </div>
+                <button id="ach-button"> Achievements</button>
+                <script>
+                    /** have set my skills button using its ID, then set the onclick attribute to attch a link to my 
+                    * skills page that can only be accessed through the button and is not on my nav */
+                    document.getElementById("ach-button").setAttribute("onclick", "window.location.href = 'Achievements.html';");   
+                </script>
+            </div>
+
+        </main>
     </body> 
 </html> 

@@ -90,3 +90,25 @@ nav {
   font-size: 24px;
   float: right;
 }
+
+/*styling for the the overall grid */
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  /*4 rows that placed as auto which sets the cloumns to meet the content and size of page */
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  background-color: #daeef5;
+  padding: 5px;
+}
+
+/* styling for each box in the grid*/
+.grid-container > div {
+  background-color: #daeef5;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+}
