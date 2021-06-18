@@ -6,6 +6,7 @@
         <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
         <link rel="stylesheet" type="text/css" href="style/style.css">  
         <style>
+            /*styling for github button*/
             #github-button
             {
                 color:black;
@@ -45,9 +46,10 @@
 
             <br> <br> <br> <br> <br>
 
+            <!--titlr-->
             <h1>Contact me </h1>
             
-            
+            <!--div for information about my email-->
             <div class = "div"> 
                 <p style="font-size:27px; width:300px;"> 
                 <span style="font-weight:bold; font-size:27px; text-decoration:underline;">Email</span> 
@@ -57,6 +59,7 @@
                 <br><br>
             </div>
 
+            <!--div for information about github-->
             <div class = "div"> 
                 <p style="font-size:27px; width:300px;"> 
                 <span style="font-weight:bold; font-size:27px; text-decoration:underline;">Github</span> 
@@ -64,17 +67,14 @@
                 Github stores my past projects, click button to check out my page.</p>
                 <button id="github-button"> Github</button>
                 <script>
-                    /** have set my skills button using its ID, then set the onclick attribute to attch a link to my 
-                    * skills page that can only be accessed through the button and is not on my nav */
+                    /** have set my github button using its ID, then set a link to github page that can only be accessed through the button and is not on my nav */
                     document.getElementById("github-button").setAttribute("onclick", "window.location.href = 'https://github.com/LauraK2';");   
                 </script>
             </div>
 
             <!-- This is a form that gets a user to contact you -->
             <form method="GET">
-
                 <br>
-
                 <!-- This label and text input are for the user to enter their company or 
                     job name to give me and idea of whos contacting me-->
                 <p><label for="food"><b><u>Company name:</b></u></label> </p>
@@ -91,20 +91,22 @@
                 <br>
                 <br>
                 <br>
+                <!--This label is for that user to type out a idfferent platofrm to contact me on-->
                 <form action="/action_page.php"></form>
                 <p><label for="email"> <b><u>If select "other", type what platform you'd like to use:</b></u></label></p>
                     <input type="email" id="email" name="email">
                 </form>
                 <br> <br> <br>
 
+                <!-- This label is for the user to type thier email so i may contact them-->
                 <form action="/action_page.php">
                     <label for="email"> <b><u>Enter your email:</b></u></label>
                     <input type="email" id="email" name="email">
                 </form>
                 <br/>
 
-                <!-- This will submit the form and process the  -->
-                <input type="Submit" value="Submit"/>
+                <!-- This will submit the form-->
+                <button type="button" onclick="alert('Your form has been submitted')"> Submit</button>
             </form>
         </main>
     </body> 
