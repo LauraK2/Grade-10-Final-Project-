@@ -1,8 +1,8 @@
 h1
 {
-    font-size: 30;
+    font-size: 30px;
     font-weight: bold;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", 'Helvetica Neue', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     text-align: center;       
 }
 
@@ -33,7 +33,7 @@ nav li
 /*stylling for the indivudal links/anchors*/
 nav a
 {
-    padding: 7px;
+    padding: 10px;
     margin: 2px;
     border: 2px solid black;
     color:#91c9ee;
@@ -43,7 +43,7 @@ nav a
 /*styling for when you hover over a anchor/link*/
 nav a:hover, nav a:focus
 {
-    background-color: #91c9ee;
+    background-color: #eae1f0;
     color: whitesmoke;
 }
 
@@ -63,7 +63,7 @@ nav
     text-align: center;
     margin: 10px;
     overflow:hidden;
-    z-index: 2;
+    z-index: 3;
 }
 
 .flex-container 

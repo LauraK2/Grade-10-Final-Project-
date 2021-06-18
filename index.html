@@ -9,7 +9,7 @@
             #aboutme-button
             {
                 color:black;
-                background-color: rgb(188, 207, 248);
+                background-color: #d3dcf2;
                 text-decoration: bold;
                 font-size: 30px;
                 margin:15px;
@@ -18,10 +18,11 @@
                 border: 2px outset #252838;
             }
        
+            /**/
             #extra-button
             {
                 color:black;
-                background-color: rgb(188, 207, 248);
+                background-color: #d3dcf2;
                 text-decoration: bold;
                 font-size: 30px;
                 margin:15px;
@@ -29,10 +30,12 @@
                 float: center;
                 border: 2px outset #252838;
             }
+
+            /*styling for achievemnets button*/
             #ach-button
             {
                 color:black;
-                background-color: rgb(188, 207, 248);
+                background-color: #d3dcf2;
                 text-decoration: bold;
                 font-size: 30px;
                 margin:15px;
@@ -41,6 +44,7 @@
                 border: 2px outset #252838;
             }  
 
+            /*styling for image front picture*/
             #image
             {
                 margin:7px;
@@ -48,21 +52,11 @@
                 border: 2px outset #252838;
                 -webkit-border:2px outset #252838;
                 padding:0%;
-                height: 350px;
-                width:430px;
+                height: 400px;
+                width: 98%;
                 float: right;
             }
 
-            #div 
-            {
-                border: 5px outset #252838;
-                padding:7px;
-                margin: 15px;
-                background-color:#e8f6fa;    
-                text-align: center;
-                font-size: 24px;
-                float: right;
-            }
         </style> 
     </head>
     <body style="background-color: #E6E6FA; color: #252838;">
@@ -83,35 +77,24 @@
                     <li>
                         <a href="Extracurriculars.html"> Extracurriculars</a>
                     </li>
+                    <li>
+                        <a href="Contact.html"> Contact me</a>
+                    </li>
                 </ul>
             </nav>
 
             <br> <br> <br> <br> <br>
 
             <h1>My Website </h1>
-
             
-            
-            <div class = "div"> 
-                <p style="font-size:27px; width:300px;"> 
-                <span style="font-weight:bold; font-size:27px; text-decoration:underline;">About Me Page</span> 
-                <br> <br>
-                I am Laura Katsman,  I'm a student attending PTEC/Shaftesbury high school I am 15 years olds. Clck more...</p>
-
-                <button id="aboutme-button"> About me </button>
-                <script>
-                    /** have set my skills button using its ID, then set the onclick attribute to attch a link to my 
-                    * skills page that can only be accessed through the button and is not on my nav */
-                    document.getElementById("aboutme-button").setAttribute("onclick", "window.location.href = 'About me.html';");   
-                </script>
-            </div>
+            <img src="https://static.wixstatic.com/media/64922c_a798d7eb32824a26a02de2d7bf0c2dd2~mv2.jpg/v1/fill/w_1260,h_569,al_c,q_90/64922c_a798d7eb32824a26a02de2d7bf0c2dd2~mv2.webp" alt="homepage picture" id="image">
 
             <div class = "div"> 
                 <p style="font-size:27px; width:300px;"> 
                 <span style="font-weight:bold; font-size:27px; text-decoration:underline;"> Extracurriculars Page</span> 
                 <br>
                 <br>
-                Over my time starting in 2010 I have taken up some extracurriculars and since then have contiuned to enjoy. Click more...</p>
+                Over the years I have taken up some extracurriculars and developed the hobbies, some of them I contiune to enjoy. Click more...</p>
 
                 <button id="extra-button"> Extracurriculars</button>
                 <script>
@@ -126,7 +109,7 @@
                 <span style="font-weight:bold; font-size:27px; text-decoration:underline;"> Achievements Page</span> 
                 <br>
                 <br>
-                During my time inside and outside of school I have had many opportunities i have particitapted in. Click more...</p>
+                During the years I've had many opportunities I participated in and completed with achievement. Click more...</p>
 
                 <button id="ach-button"> Achievements</button>
                 <script>
@@ -136,6 +119,19 @@
                 </script>
             </div>
 
+            <div class = "div"> 
+                <p style="font-size:27px; width:300px;"> 
+                <span style="font-weight:bold; font-size:27px; text-decoration:underline;">About Me Page</span> 
+                <br> <br>
+                I am Laura Katsman, a student attending PTEC and Shaftesbury High School. I am 15 years old. Clck more...</p>
+
+                <button id="aboutme-button"> About me </button>
+                <script>
+                    /** have set my skills button using its ID, then set the onclick attribute to attch a link to my 
+                    * skills page that can only be accessed through the button and is not on my nav */
+                    document.getElementById("aboutme-button").setAttribute("onclick", "window.location.href = 'About me.html';");   
+                </script>
+            </div>
         </main>
     </body> 
 </html> 
